@@ -5,7 +5,15 @@ const questions = [
     {
       type: 'input',
       name: 'text',
-      message: 'Logo Text?',
+      message: 'Logo Text (maximum 3 characters)?',
+      validate: function (input) {
+        const maxLength = 3;
+        if (input.length <= maxLength) {
+          return true;
+        } else {
+          return `Text must not exceed ${maxLength} characters.`;
+        }
+      },
     },
     {
       type: 'input',
