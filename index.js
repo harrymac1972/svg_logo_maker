@@ -22,7 +22,7 @@ const questions = [
     {
       type: 'list',
       name: 'shape',
-      message: 'Shap?',
+      message: 'Shape?',
       choices: ['Circle',
                 'Triangle',
                 'Square',
