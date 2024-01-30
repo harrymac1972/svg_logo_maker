@@ -11,6 +11,11 @@ const goodColours = {
     "grey": "#808080",
     "black": "#000000",
     "white": "#ffffff",
+};
+
+let goodColoursList = [];
+for (let key in goodColours) {
+    goodColoursList.push(key);
 }
 
-module.exports = {goodColours};
+module.exports = {goodColours,goodColoursList};
