@@ -32,6 +32,13 @@ const questions = [
       type: 'input',
       name: 'shapeColour',
       message: 'Shape Colour?',
+      validate: function (input) {
+        if (input.text != textColour) {
+          return true;
+        } else {
+          return `Colour can NOT match Text Colour`;
+        }
+      },
     },
 ];
 
