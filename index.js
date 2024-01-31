@@ -18,7 +18,14 @@ const questions = [
     {
       type: 'input',
       name: 'textColour',
-      message: 'Text Colour?',
+      message: 'Text Colour (common name of hexadecimal)?',
+      validate: function (input) {
+        if (colourIsValid(input)) {
+          return true;
+        } else {
+          return `Invalid Colour`;
+        }
+      },
     },
     {
       type: 'list',

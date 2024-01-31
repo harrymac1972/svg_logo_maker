@@ -18,4 +18,23 @@ for (let key in goodColours) {
     goodColoursList.push(key);
 }
 
-module.exports = {goodColours,goodColoursList};
+startsWithPound = (colourStr) => {
+    if (colourStr.startsWith("#")){
+        return true;
+    } else {
+        return false;
+    }
+  }
+
+colourIsValid = (colourStr) => {
+    if (startsWithPound(colourStr)) {
+        return true;
+    }
+    if (goodColoursList.includes(colourStr)) {
+        return true;
+    }
+}
+
+module.exports = {goodColours,
+                goodColoursList,
+                colourIsValid};
