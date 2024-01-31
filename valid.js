@@ -18,19 +18,16 @@ for (let key in goodColours) {
     goodColoursList.push(key);
 }
 
-startsWithPound = (colourStr) => {
-    if (colourStr.startsWith("#")){
-        return true;
-    } else {
-        return false;
-    }
+isHexadecimal = (colourStr) => {
+    const hexRegex = /^#?([0-9A-Fa-f]{3}|[0-9A-Fa-f]{6})$/;
+    return hexRegex.test(colourStr);
   }
 
 colourIsValid = (colourStr) => {
-    if (startsWithPound(colourStr)) {
+    if (isHexadecimal(colourStr)) {
         return true;
     }
-    if (goodColoursList.includes(colourStr)) {
+    if (goodColoursList.includes(colourStr.toLowerCase())) {
         return true;
     }
 }

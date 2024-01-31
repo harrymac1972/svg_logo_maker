@@ -18,7 +18,7 @@ const questions = [
     {
       type: 'input',
       name: 'textColour',
-      message: 'Text Colour (common name of hexadecimal)?',
+      message: 'Text Colour (Common name OR a hexadecimal value)?',
       validate: function (input) {
         if (colourIsValid(input)) {
           return true;
@@ -41,10 +41,10 @@ const questions = [
       name: 'shapeColour',
       message: 'Shape Colour?',
       validate: function (input,answers) {
-        if (input.toLowerCase() !== answers.textColour.toLowerCase()) {
+        if (input.toLowerCase() !== answers.textColour.toLowerCase() && colourIsValid(input)) {
           return true;
         } else {
-          return 'Colour can NOT match Text Colour';
+          return 'Invalid or matching colour';
         }
       },
     },
