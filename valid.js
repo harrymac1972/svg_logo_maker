@@ -25,6 +25,7 @@ colourIsValid = (colourStr) => {
     if (goodColoursList.includes(colourStr.toLowerCase())) {
         return true;
     }
+    return false;
 }
 
 isHexadecimal = (colourStr) => {
