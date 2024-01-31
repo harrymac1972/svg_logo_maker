@@ -18,11 +18,6 @@ for (let key in goodColours) {
     goodColoursList.push(key);
 }
 
-isHexadecimal = (colourStr) => {
-    const hexRegex = /^#?([0-9A-Fa-f]{3}|[0-9A-Fa-f]{6})$/;
-    return hexRegex.test(colourStr);
-  }
-
 colourIsValid = (colourStr) => {
     if (isHexadecimal(colourStr)) {
         return true;
@@ -31,6 +26,11 @@ colourIsValid = (colourStr) => {
         return true;
     }
 }
+
+isHexadecimal = (colourStr) => {
+    const hexRegex = /^#?([0-9A-Fa-f]{3}|[0-9A-Fa-f]{6})$/;
+    return hexRegex.test(colourStr);
+  }
 
 textsDontMatch = (text1,text2) => {
     if (text1.toLowerCase() !== text2.toLowerCase()) {
