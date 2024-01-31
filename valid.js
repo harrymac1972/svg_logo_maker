@@ -32,6 +32,15 @@ colourIsValid = (colourStr) => {
     }
 }
 
+textsDontMatch = (text1,text2) => {
+    if (text1.toLowerCase() !== text2.toLowerCase()) {
+        return true;
+    } else {
+        return false;
+    }
+}
+
 module.exports = {goodColours,
                 goodColoursList,
-                colourIsValid};
+                colourIsValid,
+                textsDontMatch};

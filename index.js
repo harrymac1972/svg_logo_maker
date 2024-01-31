@@ -41,7 +41,7 @@ const questions = [
       name: 'shapeColour',
       message: 'Shape Colour?',
       validate: function (input,answers) {
-        if (input.toLowerCase() !== answers.textColour.toLowerCase() && 
+        if (textsDontMatch(input,answers.textColour) && 
             colourIsValid(input)) {
           return true;
         } else {
