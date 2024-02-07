@@ -1,6 +1,7 @@
 
 const inquirer = require('inquirer');
-const valid = require('./valid.js');
+const valid = require("./valid");
+const render = require("./lib/render");
 
 const questions = [
     {
@@ -38,8 +39,8 @@ const questions = [
     },
     {
       type: 'input',
-      name: 'shapeColour',
-      message: 'Shape Colour (can not match Text Colour)?',
+      name: 'backgroundColour',
+      message: 'Background Colour (can not match Text Colour)?',
       validate: function (input,answers) {
         if (textsDontMatch(input,answers.textColour) && 
             colourIsValid(input)) {
@@ -53,6 +54,10 @@ const questions = [
 
 function createLogo(data) {
     console.log(data);
+    render.render_shape(data.shape,
+                  data.backgroundColour,
+                  data.textColour,
+                  data.text);
 }
 
 // ===================================================
