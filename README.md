@@ -14,11 +14,11 @@ This application allows the user to quickly make a logo with SVG technology.  Th
 - [Questions](#questions)
 
 ## Installation
-1. "Node.js" must be installed on local machine.
-2. Once in your project folder please type "npm i -y" for all dependencies.
+1. "**Node.js**" must be installed on local machine.
+2. Once in your project folder please type "**npm i -y**" for all dependencies.
 
 ## Usage
-To use the application, enter "node index.js" in a CLI of your choosing.
+To use the application, enter "**node index.js**" in a CLI of your choosing.
 Note: Common colours are included but must be spelled correctly.
 After all questions are answered see the generated file "logo.svg" in root folder.
 
@@ -29,10 +29,12 @@ This application is licensed by: [MIT](https://opensource.org/licenses/MIT)
 You may 'fork' the project in the github repository.
 
 ## Tests
-In Bash Console enter "npm run test".
+In Bash Console enter "**npm run test**".
 
 ## Questions
-____
+If you have any questions, please contact:
+-- (https://github.com/harrymac1972)
+-- harrymac1972@gmail.com.
 
 ## Screenshots
 ____
