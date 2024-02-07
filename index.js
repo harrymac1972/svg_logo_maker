@@ -53,7 +53,6 @@ const questions = [
 ];
 
 function createLogo(data) {
-    console.log(data);
     render.render_shape(data.shape,
                   data.backgroundColour,
                   data.textColour,
