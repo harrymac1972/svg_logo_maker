@@ -1,8 +1,9 @@
+
 # SVG Logo Maker
-____
+[![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
 ## Description
-____
+This application allows the user to quickly make a logo with SVG technology.  The user can enter the shape, text, and colours for both.  The logo is then saved to "logo.svg" in the root project folder.
 
 ## Table of Contents
 - [Installation](#installation)
@@ -13,19 +14,22 @@ ____
 - [Questions](#questions)
 
 ## Installation
-____
+1. "Node.js" must be installed on local machine.
+2. Once in your project folder please type "npm i -y" for all dependencies.
 
 ## Usage
-____
+To use the application, enter "node index.js" in a CLI of your choosing.
+Note: Common colours are included but must be spelled correctly.
+After all questions are answered see the generated file "logo.svg" in root folder.
 
 ## License
-____
+This application is licensed by: [MIT](https://opensource.org/licenses/MIT)
 
 ## Contributing
-____
+You may 'fork' the project in the github repository.
 
 ## Tests
-____
+In Bash Console enter "npm run test".
 
 ## Questions
 ____
