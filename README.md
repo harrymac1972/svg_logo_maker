@@ -14,6 +14,7 @@ This application allows the user to quickly make a logo with SVG technology.  Th
 - [Questions](#questions)
 - [Screenshots](#screenshots)
 - [Video](#video)
+- [GitHub Link](#github-link)
 
 ## Installation
 1. "**Node.js**" must be installed on local machine.
@@ -43,4 +44,9 @@ If you have any questions, please contact:
 ![Screenshot_2](./public/imgs/screenshot_BASH.png)
 
 ## Video
-____
+<a href="https://drive.google.com/file/d/17Vhp4nK8DVYRAZOYTwhUKFGuwyhwKiIt/view">Demonstration Video</a>
+
+## GitHub Link
+<a href="https://github.com/harrymac1972/svg_logo_maker">SVG Logo Maker</a>
+
+
