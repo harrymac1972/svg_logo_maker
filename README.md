@@ -12,6 +12,8 @@ This application allows the user to quickly make a logo with SVG technology.  Th
 - [Contributing](#contributing)
 - [Tests](#tests)
 - [Questions](#questions)
+- [Screenshots](#screenshots)
+- [Video](#video)
 
 ## Installation
 1. "**Node.js**" must be installed on local machine.
@@ -37,7 +39,8 @@ If you have any questions, please contact:
 -- harrymac1972@gmail.com.
 
 ## Screenshots
-____
+![Screenshot_1](./public/imgs/screenshot_npm_run_test.png)
+![Screenshot_2](./public/imgs/screenshot_BASH.png)
 
 ## Video
 ____
